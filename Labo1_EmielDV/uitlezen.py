@@ -6,4 +6,4 @@ words = data.split()
 
 counts = Counter(words)
 
-print(counts)
+print("\n" + str(counts) + "\n")

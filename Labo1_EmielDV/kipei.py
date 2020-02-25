@@ -1,11 +1,14 @@
 from random import randint
 
-print("LINGO-BINGO Welkom bij het kip en eieren spel!")
+print("\n\033[1;36;40mLINGO-BINGO Welkom bij het kip en eieren spel!")
+print("\nIk genereer een cijfer tussen 1000 en 10000 en u moet dit cijfer raden.")
+print("\nVoor elk cijfer dat u correct en op de juiste plaats heeft geraden krijgt u een 'kip'.\nVoor elk cijfer dat correct geraden is maar op de verkeerde plaats, krijgt u een 'ei'")
 
-randomNumber = randint(1000, 9999)
-# print(randomNumber)
 
-geradenNummer = int(input("Geef een viercijferig nummer in:\n"))
+randomNumber = randint(1000, 10000)
+print(randomNumber)
+
+geradenNummer = int(input("\n\033[1;33;40mGeef een viercijferig nummer in:\n\033[1;32;40m>>>"))
 
 pogingen = 1
 
@@ -23,10 +26,10 @@ while geradenNummer != randomNumber:
     if eggs < 0:
         eggs = 0
     
-    print("U heeft " + str(chickens) + " kippen!")
+    print("\n\033[1;33;40mU heeft " + str(chickens) + " kippen!")
     print("U heeft " + str(eggs) + " eieren!")
 
-    geradenNummer = int(input())
+    geradenNummer = int(input("\033[1;32;40m>>> "))
     pogingen += 1
 
 

@@ -8,4 +8,4 @@ def omdraaien(input):
 
     return output
 
-print(omdraaien(zin))
+print("\n" + str(omdraaien(zin)) + "\n")
